@@ -1,0 +1,167 @@
+<div class="control-section">
+  <div class="content-wrapper">
+    <input id="fileUpload" type="file" accept=".pdf" style="display:none" />
+    <!-- Desktop Toolbar -->
+    <div id="desktopToolbarContainer" class="e-pdf-toolbar"></div>
+    <!-- Mobile Toolbar -->
+    <div id="mobileToolbarContainer" class="e-pdf-toolbar" style="display:none"></div>
+    <!-- PDF Viewer -->
+    <div id="container_wrapper">
+      <div id="container" style="height:640px;width:100%;"></div>
+    </div>
+    <!-- Extract Text Dialog -->
+    <div id="extractTextDialog">
+      <div class="extract-container">
+        <div id="directExtractionOptions">
+          <div class="page-selector-wrap">
+            <input type="text" id="pageSelector" />
+          </div>
+          <span id="extractionStatusText"></span>
+        </div>
+        <div class="e-card extract-card">
+          <div class="e-card-header extract-card-header">
+            <span id="cardHeaderTitle" class="extract-card-title"></span>
+            <button type="button" id="dialogClipboardCopyBtn" class="extract-copy-btn" title="Copy to clipboard">
+              <span class="e-icons e-copy"></span>
+            </button>
+          </div>
+          <div id="dialogCardContentArea" class="e-card-content extract-card-content"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="action-description">
+  <p>
+    This sample demonstrates the text extraction features of PDF Viewer such as extracting text from the entire PDF
+    document, a specific page, or a selected area, and copying the extracted text to clipboard.
+  </p>
+</div>
+<div id="description">
+  <p>The PDF Viewer component enables you to extract text content from PDF files. This sample demonstrates:</p>
+  <ul>
+    <li>Extract text from the entire PDF document</li>
+    <li>Extract text from a specific page</li>
+    <li>Extract text from a selected area using the Select Area toolbar button</li>
+    <li>Copy extracted text to clipboard</li>
+    <li>Core interactions &mdash; Scrolling, Zooming, Panning and Page Navigation</li>
+  </ul>
+  <p>
+    More information on the PDF Viewer text extraction features can be found in this
+    <a target="_blank"
+      href="https://help.syncfusion.com/document-processing/pdf/pdf-viewer/javascript-es6/how-to/extract-text-ts">documentation
+      section</a>.
+  </p>
+</div>
+
+<style>
+  /* Clean centered main layout wrapper */
+  .control-section { width: 100%; }
+  .content-wrapper {position: relative;}
+  /* Borderless toolbar styling */
+  .e-pdf-toolbar,
+  .e-pdf-toolbar .e-toolbar-items {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+  /* Smooth wrapper for the PDF viewer canvas */
+  #container_wrapper {
+    width: 100%;
+    position: relative;
+  }
+  /* Disabled state for the dialog primary action button */
+  .extract-disabled {
+    opacity: 0.4 !important;
+    pointer-events: none !important;
+    cursor: not-allowed !important;
+  }
+  /* Documentation text formatting */
+  #action-description,
+  #description { margin-top: 10px;}
+  #action-description {
+    border: none;
+    background: transparent;
+    color: inherit;
+    padding: 0;
+    margin: 10px 0;
+  }
+  #description ul { margin: 8px 0; padding-left: 20px; }
+  #description li { margin-bottom: 6px; }
+  #description a { color: #3b82f6; text-decoration: none; }
+  #description a:hover { text-decoration: underline; }
+  #directExtractionOptions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .page-selector-wrap { flex: 0 0 200px; width: 200px; }
+  #extractionStatusText { white-space: nowrap; font-size: 13px; opacity: 0.7; }
+  #desktopToolbarContainer,
+  #mobileToolbarContainer { margin-bottom: 8px; }
+  #directExtractionOptions .e-multiselect,
+  #directExtractionOptions .e-control-wrapper,
+  #directExtractionOptions .e-input-group {
+    width: 200px !important;
+  }
+  .extract-card-header,
+  .extract-card .e-card-header {
+    display: flex !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+  }
+  .extract-card-title { flex: 1; }
+  .extract-copy-btn {
+    margin-left: auto;
+    background: transparent;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .extract-copy-btn:hover,
+  .extract-copy-btn:focus,
+  .extract-copy-btn:active {
+    background: transparent;
+    border: none;
+    outline: none;
+    box-shadow: none;
+  }
+.extract-card {
+    overflow: hidden;
+}
+.extract-card-content {
+    max-height: 150px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 16px;
+    white-space: pre-wrap;
+    word-break: break-word;
+    line-height: 1.6;
+}
+  .extract-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  #dialogCardContentArea {
+    overflow-y: auto !important;
+}
+  .extract-card-title,
+  .extract-card .e-card-header-caption,
+  .extract-card .e-card-header-title {
+    text-align: left !important;
+  }
+  /* Responsive dialog width */
+  @media (max-width: 768px) {
+    #extractTextDialog .e-dlg-content {
+      padding: 12px;
+    }
+  }
+</style>

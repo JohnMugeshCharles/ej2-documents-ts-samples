@@ -1,0 +1,89 @@
+{
+    "document-editor": {
+        "ControlName": "DocumentEditor",
+        "Samples": {
+            "default": "Default Functionalities",
+            "character-formatting": "Character Formatting",
+            "paragraph-formatting": "Paragraph Formatting",
+            "styles": "Styles",
+            "bullets-and-numbering": "Bullets and Numbering",
+            "links-and-bookmarks": "Hyperlinks and Bookmarks",
+            "table-formatting": "Table Formatting",
+            "section-formatting": "Section Formatting",
+            "headers-and-footers": "Headers and Footers",
+            "table-of-contents": "Table of Contents",
+            "print": "Print",
+            "right-to-left": "Right To Left",
+            "custom-context-menu": "Custom Context Menu",
+            "auto-save": "Auto Save",
+            "chart": "Chart Preservation",
+            "document-protection": "Document Protection",
+            "toolbar-customization": "Toolbar Customization",
+            "web-layout": "Web Layout",
+            "comments": "Comments"
+        }
+    },
+    "pdfviewer": {
+        "ControlName": "PDF Viewer",
+        "Samples": {
+            "default": "Default",
+            "read-only": "Read-Only",
+            "document-list": "Document List",
+            "multi-format-viewer": "Multi-Format Viewer",
+            "organize-pdf": "Organize Pages",
+            "redaction": "Redaction",
+            "custom-toolbar": "Custom Toolbar",
+            "custom-context-menu":"Context Menu",
+            "right-to-left": "Right To Left",
+            "form-filling": "Form Filling",
+            "form-designer": "Form Designer",
+            "eSigning-form-designer": "eSigning Form Designer",
+            "eSigning-pdf-forms": "eSigning PDF Forms",
+            "annotations": "Annotations",
+            "hand-written": "Handwritten Signature",
+            "invisible-signature": "Invisible Signature",
+            "programmatic-operations": "Programmatic Operations"
+        }
+    },
+    "spreadsheet": {
+        "ControlName": "Spreadsheet",
+        "Samples": {
+            "default": "Default Functionalities",
+            "formula": "Formula",
+            "protect-sheet": "Protect Sheet",
+            "cell-data-binding": "Cell Data Binding",
+            "remote-data-binding": "Remote Data Binding",
+            "cell-formatting": "Cell Formatting",
+            "number-formatting": "Number Formatting",
+            "sorting-and-filtering": "Sorting and Filtering",
+            "cell-template": "Cell Template",
+            "notes": "Note",
+            "print": "Print"
+        }
+    },
+    "pdf": {
+        "ControlName": "PDF",
+        "Samples": {
+            "default": "Default",
+			"job-application": "Job Application",
+			"hello-world": "Hello World",
+			"rtl-text": "RTL Text",
+			"bullets-and-lists": "Bullets And Lists",
+			"shapes": "Shapes",
+			"image-insertion": "Image Insertion",
+			"extract-image": "Extract Image",
+			"extract-text": "Extract Text",
+			"digital-signature": "Digital Signature",
+			"redaction": "Redaction",
+			"document-settings": "Document Settings",
+			"page-settings": "Page Settings",
+			"layers": "Layers",
+			"form-filling": "Form Filling",
+			"bookmarks": "Bookmarks",
+			"merge-documents": "Merge Documents",
+			"split-pdf": "Split PDF",
+			"watermark-pdf": "Watermark PDF",
+			"rearrange-pages": "Rearrange Pages"
+        }
+    }
+}

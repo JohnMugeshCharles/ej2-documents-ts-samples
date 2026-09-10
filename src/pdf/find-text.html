@@ -1,0 +1,133 @@
+<style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    td {
+        vertical-align: top;
+    }
+    label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: 500;
+    }
+    #searchText {
+        margin-left: 15px;
+        margin-bottom: 10px;
+        width: 200px;
+    }
+    textarea {
+        width: 100%;
+        height: 100px;
+        resize: vertical;
+    }
+    .error {
+        color: #d32f2f;
+        margin-top: 10px;
+        padding: 10px;
+        background-color: #ffebee;
+        border-radius: 4px;
+        display: none;
+    }
+    .success {
+        color: #388e3c;
+        margin-top: 10px;
+        padding: 10px;
+        background-color: #e8f5e9;
+        border-radius: 4px;
+        display: none;
+    }
+    .choose-btn {
+        margin-top: 15px;
+    }
+    .file-input {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        border: 0;
+    }
+    .file-name {
+        color: #6b7280;
+        margin-left: 8px;
+    }
+    #findBtn {
+        width: 150px;
+        margin-bottom: 15px;
+    }
+    .text-class {
+        font-weight: bold;
+    }
+</style>
+<div class="control-section">
+    <div class="tablediv">
+        <span class="rowdiv">
+            Click the button to find text in PDF document using JavaScript PDF Library.
+        </span>
+        <div class="tablediv">
+            <div class="rowdiv">
+                <br>
+                <text class="text-class">Choose a PDF file to perform find text</text>
+                <div class="celldiv">
+                    <table>
+                        <tr>
+                            <td align="left">
+                                <input id="fileInput" class="file-input" type="file" accept="application/pdf">
+                                <label for="fileInput" class="e-btn choose-btn">Choose File</label>&nbsp;
+                                <span id="filenameDisplay" class="file-name">PDF Succinctly.pdf</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left">
+                                <strong><text for="searchText">Enter the text to search in the PDF:</text></strong>
+                                <input id="searchText" class="e-input" type="text" placeholder="Enter text to find"
+                                    value="PDF">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left">
+                                <label style="display: inline-flex; align-items: center; margin-right: 30px;">
+                                    <input type="checkbox" id="matchCaseCheckbox"
+                                        style="margin-right: 8px; margin-top: 0px;">
+                                    Match Case
+                                </label>
+                                <label style="display: inline-flex; align-items: center;">
+                                    <input type="checkbox" id="wholeWordCheckbox"
+                                        style="margin-right: 8px; margin-top: 0px;">
+                                    Whole Word
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left">
+                                <button id="findBtn" class="e-btn" type="button">Find Text</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left">
+                                <strong><text for="resultTextarea">Find Text Results:</text></strong>
+                                <textarea ref="resultTextareaRef" id="resultTextarea" style="height: 200px; background: transparent;" readonly></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div id="errorMessage" class="error"></div>
+        <div id="successMessage" class="success"></div>
+    </div>
+</div>
+<div id="action-description">
+    <p>This sample demonstrates how to search for specific text in a PDF document and retrieve the pages where the text
+        appears.</p>
+</div>
+<div id="description">
+    <p>
+        This feature allows users to search for text in a PDF document and retrieve the corresponding page numbers for
+        quick navigation and reference. More information can be found in this documentation <a
+            href="https://help.syncfusion.com/document-processing/pdf/pdf-library/javascript/overview">section</a>.
+    </p>
+</div>

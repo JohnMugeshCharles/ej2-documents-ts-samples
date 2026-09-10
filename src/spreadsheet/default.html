@@ -1,0 +1,86 @@
+<div class="control-section">
+    <div id="spreadsheet"></div>
+</div>
+<!-- custom code start -->
+<div id="action-description">
+    <p>
+        This sample demonstrates the <code>Spreadsheet</code> component and its features such as editing, formulas,
+        formatting, importing, and exporting.
+    </p>
+</div>
+<div id="description">
+    <p>
+        The <code>Spreadsheet</code> component is used to organize and analyze data in tabular format.
+        It has a built-in calculation library that supports most commonly used formulas. Excel workbook files can be
+        imported and exported by providing <code>openUrl</code> &
+        <code>saveUrl</code> property.
+    </p>
+    <p>
+      <strong>Note:</strong> The <code>openUrl</code> and <code>saveUrl</code> endpoints used in these demo samples are
+      provided solely for demonstration purposes. The associated web service may experience memory limitations when
+      handling large Excel files, which could result in import or export failures. For better performance and reliability
+      especially when working with large files, we recommend hosting your own local service. For detailed guidance, please
+      refer to our <a target="_blank" href="https://www.syncfusion.com/blogs/post/host-spreadsheet-open-and-save-services">
+      Blog</a> post.
+    </p>
+    <p>
+        Data binding can be achieved by setting an array of JavaScript objects or an instance of Data Manager to the
+        <code>dataSource</code> property under the <code>ranges</code> of sheet. The <code>cellFormat</code> and
+        <code>numberFormat</code>
+        methods are used to apply format to a range of cells in the <code>created</code> event.
+    </p>
+    <p>
+        More information about the Spreadsheet component can be found in this
+        <a target="_blank" href="https://help.syncfusion.com/document-processing/excel/spreadsheet/javascript-es6/getting-started">
+            documentation</a> section.
+    </p>
+    <p>
+        Looking for the full Typescript Spreadsheet Editor overview, features, pricing, and documentation? Visit the
+        <a target="_blank" href="https://www.syncfusion.com/spreadsheet-editor-sdk/javascript-spreadsheet-editor"> Typescript Spreadsheet Editor</a> page.
+    </p>
+</div>
+<style>
+    .control-section .control-wrapper {
+        height: 550px;
+    }
+
+    .e-spreadsheet .e-main-panel .e-main-content {
+        margin-left: 0 !important;
+    }
+
+    #sb-content .e-spreadsheet .e-tab .e-tab-text {
+        display: inherit;
+    }
+
+    /* newTab support styles */
+    .ej2-new .sb-header,
+    .ej2-new .sb-bread-crumb,
+    .ej2-new #action-description,
+    .ej2-new #description-section,
+    .ej2-new #description {
+        display: none
+    }
+
+    .ej2-new .container-fluid,
+    .ej2-new .container-fluid .control-section,
+    #sidebar-section {
+        padding: 0px;
+    }
+
+    .ej2-new .sample-browser>.content.e-view {
+        top: 0px;
+        padding: 0px;
+        text-align: initial;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .ej2-new .control-section .control-section {
+        height: 100vh;
+    }
+   .e-spreadsheet .e-main-panel .e-main-content{
+        margin-left: 0 !important;
+    }
+    /* end of newTab support styles */
+</style>
+<!-- custom code end -->

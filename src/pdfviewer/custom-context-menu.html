@@ -1,0 +1,105 @@
+<div class="col-lg-9 control-section pdfviewer-control-section">
+    <div class="content-wrapper">
+
+        <div id="pdfViewer" style="height:640px; width:100%;">
+        </div>
+    </div>
+</div>
+<div class="col-lg-3 property-section-pdfviewer">
+    <div class="pdfviewer-property-container">
+        <p><b>Properties</b></p>
+    </div>
+    <table>
+        <tr>
+            <td class='pdfviewer-contextmenu-checkbox-label' id="hide-default-context-menu-label">Hide Default Context
+                Menu</td>
+            <td><input type="checkbox" id="hide-default-context-menu" aria-labelledby="hide-default-context-menu-label">
+            </td>
+        </tr>
+        <tr>
+            <td class='pdfviewer-contextmenu-checkbox-label' id="show-custom-menu-bottom-label">Add Custom option at
+                bottom</td>
+            <td><input type="checkbox" id="show-custom-menu-bottom" aria-labelledby="show-custom-menu-bottom-label">
+            </td>
+        </tr>
+        <tr id="custom-menu-options" style="display: none;">
+            <td colspan="2">
+                <div class="pdfviewer-contextmenu-group">
+                    <label class="pdfviewer-contextmenu-group-label">Annotation Options:</label>
+                    <div id="annotation-menu-select"></div>
+                </div>
+                <div class="pdfviewer-contextmenu-group">
+                    <label class="pdfviewer-contextmenu-group-label">Text Selection Options:</label>
+                    <div id="text-selection-menu-select"></div>
+                </div>
+                <div class="pdfviewer-contextmenu-group">
+                    <label class="pdfviewer-contextmenu-group-label">Form Fields Options:</label>
+                    <div id="form-fields-menu-select"></div>
+                </div>
+                <button id="apply-menu-btn" type="button">Customize</button>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div id="action-description">
+    <p>Explore how to tailor context menus for PDF pages, annotations, and form fields in this sample.</p>
+</div>
+<div id="description">
+    <p>
+        This customization empowers users to add new context menus on PDF pages, annotations, and form fields. In this
+        sample:
+    </p>
+    <ul>
+        <li>Selecting text on pages reveals a custom context menu, enabling users to search for the selected text on
+            Google.</li>
+        <li>Annotations and Form Fields can be locked directly from the context menu.</li>
+        <li>Customization is achieved using the following APIs:
+            <ul>
+                <li>Customize the context menu by selectively displaying custom options, hiding existing menu items,
+                    controlled by boolean parameters in the <code>addCustomMenu()</code> method.</li>
+                <li>Position custom menu items either above or below existing ones, adjusting boolean parameters in the
+                    <code>addCustomMenu()</code> method.
+                </li>
+                <li>Tailor the visibility of custom menu items using the <code>customContextMenuBeforeOpen</code> event.
+                </li>
+                <li>Implement specific functionalities for custom options through the
+                    <code>customContextMenuSelect</code> event.
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <p>
+        More information on the PDF Viewer instantiation can be found in this
+        <a target="_blank"
+            href="https://help.syncfusion.com/document-processing/pdf/pdf-viewer/javascript-es6/getting-started">
+            documentation section</a>.
+    </p>
+</div>
+<style>
+    .property-section-pdfviewer {
+        padding: 20px 15px;
+    }
+
+    .pdfviewer-contextmenu-checkbox-label {
+        padding: 10px;
+    }
+
+    .pdfviewer-control-section {
+        border-right: 1px solid #D7D7D7;
+    }
+
+    .pdfviewer-property-container {
+        padding-bottom: 30px;
+    }
+
+    .pdfviewer-contextmenu-group {
+        padding-bottom: 15px;
+    }
+
+    .pdfviewer-contextmenu-group-label {
+        display: block;
+        font-weight: 600;
+        padding: 0 0 8px 10px;
+    }
+</style>

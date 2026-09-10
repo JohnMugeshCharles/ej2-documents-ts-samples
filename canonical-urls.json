@@ -1,0 +1,6 @@
+{
+    "spreadsheet" : "https://www.syncfusion.com/spreadsheet-editor-sdk/javascript-spreadsheet-editor",
+    "document-editor" : "https://www.syncfusion.com/docx-editor-sdk/javascript-docx-editor",
+    "pdfviewer" : "https://www.syncfusion.com/pdf-viewer-sdk/javascript-pdf-viewer",
+    "pdf" : "https://www.syncfusion.com/document-sdk/javascript-pdf-library" 
+}
