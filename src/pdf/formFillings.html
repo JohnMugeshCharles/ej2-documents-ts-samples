@@ -1,0 +1,342 @@
+<div class="control-section">
+    <br>
+    <p class="description">
+        Please note that Adobe Reader or its equivalent is required to view the resultant document.
+    </p>
+    <!-- Name -->
+    <div class="form-group">
+        <label class="e-label">Name</label>
+        <input id="name" />
+    </div>
+    <!-- Gender -->
+    <div class="form-group">
+        <label class="e-label">Gender</label>
+        <input id="gender" />
+    </div>
+    <!-- DOB -->
+    <div class="form-group">
+        <label class="e-label">Date of Birth</label>
+        <input id="dob" />
+    </div>
+    <!-- Email -->
+    <div class="form-group">
+        <label class="e-label">Email ID</label>
+        <input id="email" />
+    </div>
+    <!-- State -->
+    <div class="form-group">
+        <label class="e-label">Coming from</label>
+        <input id="state" />
+    </div>
+    <!-- Newsletter -->
+    <div class="form-group">
+        <div class="inline">
+            <input id="newsletter" type="checkbox" />
+            <label class="e-label" style="font-weight:600;">
+                Would you like to receive our Newsletter?
+            </label>
+        </div>
+    </div>
+    <!-- Buttons -->
+    <div class="btn-row">
+        <button id="btnViewTemplate" class="e-btn">View Template</button>
+        <button id="btnFillForm" class="e-btn">Fill Form</button>
+        <button id="btnFillFlatten" class="e-btn">Fill And Flatten</button>
+    </div>
+    <br>
+</div>
+<div id="action-description">
+    <p>
+        This sample demonstrates how to fill and flatten the form fields to personalize your PDF document.It is also
+        possible to create, edit, and delete the form fields using the <a href="https://www.syncfusion.com/document-sdk/javascript-pdf-library" target="_blank" rel="noopener" style="text-decoration: none;">JavaScript PDF Library</a>.
+    </p>
+</div>
+<div id="description">
+    <p>More information about the forms can be found in this documentation <a
+            href="https://help.syncfusion.com/document-processing/pdf/pdf-library/javascript/formfields" style="text-decoration: none;">section</a>.
+    </p>
+</div>
+<style>
+    :root {
+        --bg: #f7f7f7;
+        --border: #d6d6d6;
+        --text: #333333;
+        --primary: #4a90e2;
+        --btn-bg: #e9ecef;
+        --e-border-color: var(--border);
+    }
+
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --bg: #0b0b0c;
+            --border: rgba(255, 255, 255, 0.42);
+            --text: #ffffff;
+            --btn-bg: #2b2b2b;
+            --e-border-color: var(--border);
+        }
+    }
+
+    @media (prefers-contrast: high),
+    (prefers-contrast: more) {
+        :root {
+            --border: #ffffff;
+            --e-border-color: #ffffff;
+        }
+    }
+
+    .control-section {
+        font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    .description {
+        font-size: 14px;
+        margin-bottom: 12px;
+        color: inherit;
+    }
+
+    .form-group {
+        margin-bottom: 12px;
+    }
+
+    .e-label {
+        display: block;
+        font-weight: 600;
+        margin-bottom: 6px;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group input[type="date"],
+    .form-group select,
+    .form-group .e-input,
+    .form-group .e-control.e-textbox,
+    .form-group .e-control.e-filled,
+    .e-dropdownlist .e-input {
+        width: 100%;
+        padding: 8px 10px;
+        border: 1px solid;
+        border-color: var(--e-border-color, rgba(0, 0, 0, 0.42));
+        border-radius: 4px;
+        font-size: 14px;
+        box-sizing: border-box;
+        background: transparent;
+        color: inherit;
+    }
+
+    .form-group input[type="text"]:focus,
+    .form-group input[type="email"]:focus,
+    .form-group input[type="date"]:focus,
+    .form-group select:focus,
+    .form-group .e-input:focus {
+        outline: 2px solid #0078d4;
+        outline-offset: 1px;
+        border-color: #0078d4;
+    }
+
+    .form-group select option {
+        background: #ffffff;
+        color: #000000;
+        padding: 8px;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group input[type="date"],
+        .form-group select,
+        .form-group .e-input,
+        .e-control.e-textbox,
+        .e-control.e-filled,
+        .e-dropdownlist .e-input,
+        .e-datepicker .e-input {
+            border-color: var(--e-border-color) !important;
+            background: transparent;
+            color: var(--text);
+        }
+
+        .form-group select option {
+            background: #2b2b2b;
+            color: #ffffff;
+        }
+
+        .e-control.e-textbox,
+        .e-control.e-filled,
+        .e-dropdownlist .e-input {
+            background: transparent !important;
+            color: inherit !important;
+            border-color: rgba(255, 255, 255, 0.42) !important;
+        }
+    }
+
+    @media (prefers-contrast: high),
+    (prefers-contrast: more) {
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group input[type="date"],
+        .form-group select {
+            border-width: 2px;
+            border-color: currentColor;
+        }
+
+        .form-group label {
+            font-weight: 700;
+        }
+    }
+
+    @media (prefers-color-scheme: dark) and (prefers-contrast: high),
+    (prefers-color-scheme: dark) and (prefers-contrast: more) {
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group input[type="date"],
+        .form-group select,
+        .form-group .e-input,
+        .e-control.e-textbox,
+        .e-control.e-filled,
+        .e-dropdownlist .e-input {
+            border-color: var(--e-border-color, #ffffff) !important;
+            color: var(--text, #ffffff) !important;
+            background: transparent !important;
+        }
+
+        .form-group select option {
+            background: #2b2b2b;
+            color: #ffffff;
+        }
+    }
+
+    @media (prefers-color-scheme: dark) and (prefers-contrast: high),
+    (prefers-color-scheme: dark) and (prefers-contrast: more) {
+
+        .e-control.e-textbox,
+        .e-control.e-filled,
+        .e-textbox .e-input,
+        .e-input,
+        .e-dropdownlist .e-input,
+        .e-dropdownlist .e-wrapper,
+        .e-control .e-input,
+        input.e-input,
+        select.e-dropdownlist {
+            border-color: var(--e-border-color, #ffffff) !important;
+            color: var(--text, #ffffff) !important;
+            background: transparent !important;
+            box-shadow: none !important;
+        }
+
+        .e-control.e-textbox:focus-within,
+        .e-control.e-filled:focus-within,
+        .e-input:focus {
+            outline: 2px solid #ffffff !important;
+            outline-offset: 0 !important;
+            border-color: #ffffff !important;
+        }
+
+        .e-input::placeholder,
+        input::placeholder {
+            color: rgba(255, 255, 255, 0.75) !important;
+        }
+
+        .e-dropdownlist .e-list .e-list-item,
+        .e-dropdownlist .e-list {
+            background: #2b2b2b !important;
+            color: var(--text, #ffffff) !important;
+        }
+    }
+
+    @media (prefers-color-scheme: dark) and (prefers-contrast: high),
+    (prefers-color-scheme: dark) and (prefers-contrast: more) {
+
+        .tablediv .card .card-body .form-group .e-control.e-textbox,
+        .tablediv .card .card-body .form-group .e-control.e-filled,
+        .tablediv .card .card-body .form-group .e-input,
+        .tablediv .card .card-body .form-group input[type="text"],
+        .tablediv .card .card-body .form-group input[type="email"],
+        .tablediv .card .card-body .form-group input[type="date"],
+        .tablediv .card .card-body .form-group select,
+        .tablediv .card .card-body .form-group .e-dropdownlist .e-wrapper,
+        .tablediv .card .card-body .form-group .e-dropdownlist .e-input,
+        .tablediv .card .card-body .form-group .e-datepicker .e-input {
+            border: 1px solid var(--e-border-color, #ffffff) !important;
+            box-shadow: none !important;
+            color: #ffffff !important;
+            background: transparent !important;
+        }
+    }
+
+    .inline {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-top: 4px;
+    }
+
+    .inline input[type="checkbox"] {
+        width: auto;
+        margin: 0;
+    }
+
+    .inline label {
+        margin: 0;
+    }
+
+    .btn-row {
+        display: flex;
+        gap: 12px;
+        margin-top: 14px;
+        flex-wrap: wrap;
+    }
+
+    .btn {
+        background: var(--btn-bg);
+        border: 1px solid var(--border);
+        border-radius: 6px;
+        padding: 8px 14px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    .btn.primary {
+        background: var(--primary);
+        color: #fff;
+        border-color: var(--primary);
+    }
+
+    .form-group .e-input-group.e-control-wrapper {
+        border: 1px solid var(--e-border-color) !important;
+        border-radius: 4px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        padding: 0 12px;
+        background: transparent;
+    }
+
+    .form-group .e-input {
+        border: none !important;
+        outline: none !important;
+        box-shadow: none !important;
+        padding: 0 !important;
+        height: auto;
+    }
+
+    .form-group .e-control.e-dropdownlist,
+    .form-group .e-control.e-datepicker {
+        border: none !important;
+    }
+
+    .form-group .e-dropdownlist .e-input-group,
+    .form-group .e-datepicker .e-input-group {
+        border: none !important;
+        padding: 0 !important;
+    }
+
+    .form-group .e-input-group-icon {
+        margin-left: auto;
+    }
+
+    .form-group .e-input-group.e-control-wrapper.e-input-focus {
+        border-color: #0078d4 !important;
+        box-shadow: 0 0 0 1px #0078d4;
+    }
+</style>

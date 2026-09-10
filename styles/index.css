@@ -1,0 +1,17 @@
+@import './common.css';
+@import './min/highcontrast.css';
+@import './min/material3.css';
+@import './min/material3-dark.css';
+@import './min/fluent.css';
+@import './min/bootstrap5.css';
+@import './min/bootstrap5-dark.css';
+@import './min/bootstrap5.3.css';
+@import './min/bootstrap5.3-dark.css';
+@import './min/tailwind.css';
+@import './min/tailwind3.css';
+@import './min/tailwind3-dark.css';
+@import './min/tailwind-dark.css';
+@import './min/fluent-dark.css';
+@import './min/fluent2.css';
+@import './min/fluent2-dark.css';
+@import './min/fluent2-highcontrast.css';

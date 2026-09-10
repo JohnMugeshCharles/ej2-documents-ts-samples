@@ -1,0 +1,97 @@
+<div class="col-lg-8 control-section">
+    <div id="spreadsheet"></div>
+</div>
+<div class="col-lg-4 property-section">
+    <div class="property">
+        <input type="file" id="parse_upload">
+        <input type="text" class="input" id="open" style="width: 100%;" />
+        <button id="open_button" style="align-self: flex-end; margin-top: 5px; width: 100px;"></button>
+    </div>
+    <div class="property">
+        <input type="text" class="input" id="save" style="width: 100%;" />
+        <button id="save_button" style="align-self: flex-end; margin-top: 5px; width: 100px;"></button>
+    </div>
+</div>
+<!-- custom code start -->
+<div id="action-description">
+    <p>
+        This sample demonstrates how to import and export Excel files while skipping specific
+        properties to optimize performance in the <code>Spreadsheet</code> component.
+    </p>
+</div>
+<div id="description">
+    <p>
+        This sample demonstrates how the <code>Spreadsheet</code> component can efficiently import and export Excel
+        files by selectively skipping non-essential properties. These parsing and serialization options are designed
+        to enhance performance, particularly when dealing with large or complex Excel workbooks.
+        Excel workbook files can be imported and exported by providing
+        <a target="_blank" href="https://ej2.syncfusion.com/documentation/api/spreadsheet/#openurl">openUrl</a> &
+        <a target="_blank" href="https://ej2.syncfusion.com/documentation/api/spreadsheet/#saveurl">saveUrl</a>
+        property.
+    </p>
+    <p>
+        During the import and export processes, you can configure the parsing and serilazation options to ignore
+        specific properties such as styles, charts, images, formulas, and more. These options can be dynamically set
+        using the
+        <a target="_blank" href="https://ej2.syncfusion.com/documentation/api/spreadsheet/#beforeopen">beforeOpen</a>
+        and <a target="_blank"
+            href="https://ej2.syncfusion.com/documentation/api/spreadsheet/#beforesave">beforeSave</a> events,
+        allowing users to tailor the behavior based on file contents.
+    </p>
+    <p>Available Options:</p>
+    <ul>
+        <li><b>ignoreStyle:</b> Skips cell styling such as font, color, borders, and alignment.</li>
+        <li><b>ignoreFormat:</b> Skips number formatting rules (e.g., currency, date formats).</li>
+        <li><b>ignoreChart:</b> Skips embedded chart objects.</li>
+        <li><b>ignoreImage:</b> Skips image objects embedded in the worksheet.</li>
+        <li><b>ignoreMergedCell:</b> Skips merged cell information.</li>
+        <li><b>ignoreFormula:</b> Skips formula cells and imports only the last calculated values.</li>
+        <li><b>ignoreValidation:</b> Skips data validation rules such as dropdowns or constraints.</li>
+        <li><b>ignoreConditionalFormat:</b> Skips conditional formatting rules that apply styles based on cell values.
+        </li>
+    </ul>
+    <p>
+        More information about improving import performance for large datasets can be found in
+        this <a target="_blank"
+            href="https://help.syncfusion.com/document-processing/excel/spreadsheet/javascript-es6/performance-best-practices">documentation</a>
+        section.
+    </p>
+    <p>
+        Looking for the full Typescript Spreadsheet Editor overview, features, pricing, and documentation? Visit the
+        <a target="_blank" href="https://www.syncfusion.com/spreadsheet-editor-sdk/javascript-spreadsheet-editor"> Typescript Spreadsheet Editor</a> page.
+    </p>
+</div>
+<style>
+    .control-section .control-wrapper {
+        height: 550px;
+    }
+
+    .col-lg-8 {
+        width: 70%;
+    }
+
+    .col-lg-4 {
+        width: 30%;
+    }
+
+    .e-ss-uploader .e-file-status {
+        display: none !important;
+    }
+
+    .property-section {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .property {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px;
+        border: 1px solid #a5989887;
+        border-radius: 3px;
+    }
+</style>
+<!-- custom code end -->

@@ -1,0 +1,62 @@
+<div class="control-section">
+    <div id="spreadsheet"></div>
+</div>
+<!-- custom code start -->
+<div id="action-description">
+    <p>
+        This sample showcases <b>threaded comments</b> using shipment data. Add remarks and replies to cells, preview
+        comments on hover, and manage threads from an optional review pane.
+    </p>
+</div>
+<div id="description">
+    <p>
+        The <b>Comments</b> feature lets you add remarks and threaded replies to cells. When a cell contains a comment,
+        a small indicator appears in its corner. Hover over the indicator to view the comment.
+        You can show or hide the comments review pane using the <code>showCommentsPane</code> property:
+    </p>
+    <ul>
+        <li><code>false</code> (default) - Hides the review pane.</li>
+        <li><code>true</code> - Displays the review pane.</li>
+    </ul>
+    <p>
+        Comments can be added directly to cells via the context menu, the ribbon, the comments review pane, or
+        programmatically using the <code>updateCell</code> method. You can perform the following actions:
+    </p>
+    <ul>
+        <li><b>Add Comment</b> - Create a new comment to provide feedback or context.</li>
+        <li><b>Edit Comment</b> - Update the text of a comment or reply to keep information accurate.</li>
+        <li><b>Delete Comment</b> - Remove a single comment, a reply, or the entire thread when it's no longer needed.
+        </li>
+        <li><b>Reply</b> - Add one or more replies to an existing comment thread to provide additional
+            details or answers.</li>
+        <li><b>Resolve</b> - Mark a comment thread as resolved when the issue has been addressed.</li>
+        <li><b>Reopen</b> - Restore a resolved thread if further discussion or clarification is required.</li>
+    </ul>
+    <p>
+        More information about the Comment feature can be found in this <a target="_blank"
+            href="https://help.syncfusion.com/document-processing/excel/spreadsheet/javascript-es6/comment">documentation</a>
+        section.
+    </p>
+    <p>
+        Looking for the full Typescript Spreadsheet Editor overview, features, pricing, and documentation? Visit the
+        <a target="_blank" href="https://www.syncfusion.com/spreadsheet-editor-sdk/javascript-spreadsheet-editor"> Typescript Spreadsheet Editor</a> page.
+    </p>
+</div>
+<style>
+    .control-section .control-wrapper {
+        height: 550px;
+    }
+
+    #sb-content .e-spreadsheet .e-tab .e-tab-text {
+        display: inherit;
+    }
+
+    .ej2-new .control-section {
+        height: 550px;
+    }
+
+    .e-spreadsheet .e-main-panel .e-main-content {
+        margin-left: 0 !important;
+    }
+</style>
+<!-- custom code end -->

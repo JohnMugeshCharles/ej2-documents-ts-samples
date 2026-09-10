@@ -1,0 +1,170 @@
+{
+    "name": "PDF",
+    "directory": "pdf",
+    "category": "Document Processing Library",
+    "ftName": "pdf",
+    "samples": [
+        {            
+            "url":"default",
+			"name": "Default",
+			"description":"This sample demonstrates how to create a simple PDF document using JavaScript PDF library.",
+			"category": "PDF"
+        },
+        {
+            "url":"jobApplication",
+            "name": "Job Application",
+            "description":"This sample demonstrates the creation of job application form from the scratch using form fields. The user can fill the online job application, then download as a PDF document.",
+            "category": "PRODUCT SHOWCASE"
+        },
+        {            
+            "url":"helloWorld",
+			"name": "Hello World",
+			"description":"This sample demonstrates how to create a simple PDF document using JavaScript PDF library.",
+			"category": "GETTING STARTED"
+        },
+        {            
+            "url":"rtlText",
+			"name": "RTL Text",
+			"description":"This sample demonstrates drawing right-to-left language text in the PDF document. It is possible to draw RTL languages such as Arabic, Hebrew, Persian, Urdu and more.",
+			"category": "DRAWING TEXT"
+        },
+        {            
+            "url":"bulletsAndLists",
+			"name": "Bullets And Lists",
+			"description":"This sample demonstrates how to list the content in ordered and unordered list. The ordered list can be number or alphabets and the unordered list can be bullets, circles, and images.",
+			"category": "DRAWING TEXT",
+            "type": "update"
+        },
+        {
+            "url": "textFlow",
+            "name": "Text Flow",
+            "description":"This sample demonstrates the creation of PDF document with large text that flows over multiple pages. The user can also draw multiple paragraphs sequentially.",
+            "category": "DRAWING TEXT"
+        },
+        {
+            "url":"shapes",
+			"name": "Shapes",
+			"description":"This sample demonstrates drawing of shapes such as Ellipse, Arcs, Polygon, Pie, and Rectangle in the PDF document.",
+			"category": "GRAPHICS"
+        },
+        {
+            "url":"imageInsertion",
+            "name": "Image Insertion",
+            "description":"This sample demonstrates insertion of JPEG and PNG images in the PDF document. This sample also demonstrates the image masking capability in the Syncfusion JavaScript PDF library.",
+            "category": "GRAPHICS"
+        },
+        {
+            "url": "extractImage",
+            "name": "Extract Image",
+            "description":"This sample demonstrates how to extract images from the PDF document. The extracted images can be saved into any raster image format.",
+            "category": "IMPORT AND EXPORT"
+        },
+        {
+            "url": "extractText",
+            "name": "Extract Text",
+            "description":"This sample demonstrates how to extract the text from the PDF document.",
+            "category": "IMPORT AND EXPORT"
+        },
+        {
+            "url": "find-text",
+            "name": "Find Text",
+            "description":"This sample demonstrates how to find the text from the PDF document.",
+            "category": "IMPORT AND EXPORT",
+            "type": "new"
+        },
+        {            
+            "url":"encryption",
+			"name": "Encryption",
+			"description":"This sample demonstrates how to encrypt the PDF document with encryption standards like 40-bit RC4, 128-bit RC4, 128-bit AES, 256-bit AES Revision 6 (PDF 1.7 Extension Level 3) and advanced encryption standard 256-bit AES Revision 6 (PDF 2.0) to protect documents against unauthorized access.",
+			"category": "SECURITY",
+            "type": "new"
+        },
+        {            
+            "url":"digitalSignature",
+			"name": "Digital Signature",
+			"description":"This sample demonstrates how to digitally sign the PDF document with the PFX certificate file. It is possible to digitally sign with X509 certificates such as .pfx files with private keys.",
+			"category": "SECURITY"
+        },
+        {            
+            "url":"digital-signature-validation",
+			"name": "Digital Signature Validation",
+			"description":"This sample demonstrates how to validate the digital signatures in existing PDF document.",
+			"category": "SECURITY",
+            "type": "new"
+        },
+        {            
+            "url":"redaction",
+			"name": "Redaction",
+			"description":"This sample demonstrates redacting a text from the PDF document. It is also possible to redact the images. The redaction is a process of removing sensitive or unwanted information from the PDF document.",
+			"category": "SECURITY"
+        },
+        {            
+            "url":"documentSettings",
+			"name": "Document Settings",
+			"description":"This sample demonstrates adding PDF document properties such as title, author, keyword, subject, and producer etc.",
+			"category": "SETTINGS"
+        },
+        {            
+            "url":"pageSettings",
+			"name": "Page Settings",
+			"description":"This sample demonstrates how to digitally sign the PDF document with the PFX certificate file. It is possible to digitally sign with X509 certificates such as .pfx files with private keys.",
+			"category": "SETTINGS"
+        },
+        {            
+            "url":"header-and-footer",
+			"name": "Headers and Footers",
+			"description":"This sample demonstrates adding headers and footers with images, text, and shapes in all pages of the document.",
+			"category": "SETTINGS",
+            "type": "new"
+        },
+        {            
+            "url":"layer",
+			"name": "Layers",
+			"description":"This sample demonstrates adding layers (Optional Content Group) with different shapes in the PDF document.",
+			"category": "SETTINGS"
+        },
+        {            
+            "url":"annotations",
+			"name": "Annotations",
+            "type": "update",
+			"description":"This sample demonstrates the creation of different type of annotations such as ink, free text, pop up, text markup, rich media annotation and more.",
+			"category": "USER INTERACTIONS"
+        },
+        {            
+            "url":"formFillings",
+			"name": "Form Filling",
+			"description":"This sample shows how to fill the existing form fields in a PDF document. It also supports flattening the form fields.",
+			"category": "USER INTERACTIONS"
+        },
+        {            
+            "url":"bookmark",
+			"name": "Bookmarks",
+			"description":"This sample demonstrates how to add bookmark with the different style in the document.",
+			"category": "USER INTERACTIONS"
+        },
+        {
+            "url":"mergeDocuments",
+            "name": "Merge Documents",
+            "description":"This sample demonstrates how to merge two different PDF documents into single PDF document. It is also possible to import selective pages to the PDF document.",
+            "category": "MODIFY DOCUMENTS"
+        },
+        {            
+            "url":"splitPdf",
+			"name": "Split PDF",
+			"description":"This sample demonstrates how to digitally sign the PDF document with the PFX certificate file. It is possible to digitally sign with X509 certificates such as .pfx files with private keys.",
+			"category": "MODIFY DOCUMENTS"
+        },
+        {            
+            "url":"watermarkPdf",
+			"name": "Watermark PDF",
+			"description":"This sample demonstrates how to stamp an existing PDF document using text. The Essential PDF supports both stamp or watermark with text and images in the PDF document.",
+			"category": "MODIFY DOCUMENTS"
+        },
+        {
+            "url":"rearrangePages",
+            "name": "Rearrange Pages",
+            "description":"This sample demonstrates how to rearrange pages from an existing PDF document to make the document meaningful.",
+            "category": "MODIFY DOCUMENTS"
+        }
+    ]
+}
